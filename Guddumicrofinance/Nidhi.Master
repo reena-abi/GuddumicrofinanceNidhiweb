@@ -1,0 +1,336 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Nidhi.master.cs" Inherits="Guddumicrofinance.Nidhi" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="description" content="Nidhisoftwarez is a web based online Software used to maintain Nidhi company registered as per RBI Nidhi Act &amp; Rules 2013. we are the best nidhi software provider in India.">
+
+    <meta name="keywords" content="Nidhi software demo in Patna, Nidhi software modules, Nidhi software prize,  what is nidhi software, software firm, software for Nidhi company, Nidhi company registration ">
+
+    
+    <link rel="icon" href="assets/nidhisoftwarez.png" sizes="64x64">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <link href=" css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href=" css/style.css" type="text/css">
+
+    <link rel="stylesheet" href=" css/mobile-style.css" type="text/css">
+
+    <link rel="stylesheet" href=" css/style2.css" type="text/css">
+
+    <link rel="stylesheet" href=" css/responsive.css" type="text/css">
+
+    <link href="css/animate-custom.css" rel="stylesheet">
+
+    <link href="css/new.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <header class="bg-gradient">
+
+        <script>
+            var page_name = "about-us";
+        </script>
+
+        <!--Calling navbar.php-->
+
+        <div class="container-fluid p-0">
+    <div class="row  topnav bg-btn">
+        <div class="col-sm-12 pt-2 px-3 lead">
+            <ul class="small text-white list-unstyled mb-2 mt-1">
+                <li><i class="fas fa-phone fa-rotate-90 px-2 "></i><span> +91 9921177888
+                        / +91 9028388889 </span></li>
+                <li class=" d-none d-lg-inline-block d-xl-inline-block"><i class="fas fa-envelope pr-2"></i>
+                    <span>nidhisoftwarecompany@gmail.com</span>
+                </li>
+                <li></li>
+                <li class="text-white d-none d-md-inline-block d-lg-inline-block d-xl-inline-block ">
+                    <a href="contact-us.php">Contact Us &nbsp;<i class="fas fa-headphones-alt"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/Nidhi-Softwarez-340890656624580/?modal=admin_todo_tour"><i class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/nidhisoftwarezsolution/?hl=en"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://twitter.com/nidhisoftwarez"><i class="fab fa-twitter"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCY_JINvN-khN9F88lPwocjA"><i class="fab fa-youtube pr-2 rounded"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.php">
+            <img src=" assets/nidhisoftwarez.png" alt="NidhiSoftwareZ" class="img-fluid">
+            <h4 class="d-inline-block">Nidhisoftwarez</h4>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-align-right text-right text-light"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mr-auto"></div>
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.php">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about-us.php">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="software-features.php">Software Features</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mobile-app.php">Mobile App</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nidhi-company-registration.php">Nidhi Company Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rule.php">Nidhi (Amendment) Rule 2022</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="buy-nidhi-software.php">Buy Nidhi Software</a>
+                </li>
+                <li class="nav-item">
+                    <a href="demoform.php" class="nav-link btn-outline-info bg-btn d-inline-block px-2 rounded">Free Live
+                        Demo</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<script>
+    var page_list = ["index", "about-us", "software-features", "mobile-app", "nidhi-company-registration", "buy-nidhi-software", "contact-us", "demoform"];
+    var result = document.querySelector(".navbar-nav").children;
+    for (let i = 0; i < result.length; i++) {
+        if (page_list[i] == page_name) {
+            result[i].children[0].className += " active";
+        }
+    }
+</script>
+ 
+    </header>
+              
+ <main>
+
+        <section class="container-fluid modal-form">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        </section>
+     </main>
+        <script type="text/javascript">
+            /**
+            *******Side-Contact Form*******
+            **/
+            function openForm() {
+                let f = document.querySelector('.side-contact');
+                if (f.style.right == "0px") {
+                    f.style.right = "-320px";
+                } else {
+                    f.style.right = "0px";
+                }
+            }
+
+            function closeForm() {
+                document.querySelector('.side-contact').style.right = "-320px";
+            }
+        </script>
+    </form>
+   
+<footer class="bg-footer">
+        <div class="container-fluid p-0">
+            <div class="row text-center">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-4 text-left">
+                                <h4 class="text-light mb-3">Contact Us</h4>
+                                <div class="contact">
+                                        <table class="table text-light">
+                                                <tbody>
+                                                  <tr>
+                                                        <td><i class="fas fa-map-marker-alt"></i></td>
+                                                        <td><p>Janki Market, Bhagwat Nagar chauraha, Kumhrar, Patna - 800026</p>
+                                                        <p>Landmark Near Litera Valley School</p></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td><i class="fas fa-phone fa-rotate-90"></i></td>
+                                                    <td><p>+91 9028388889</p></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td><i class="fas fa-phone fa-rotate-90"></i> </td>
+                                                    <td><p>+91 9921177888</p></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td><i class="fas fa-envelope pr-2"></i> </td>
+                                                    <td><p>nidhisoftwarecompany@gmail.com</p></td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                </div>
+                            </div>
+                            <div class="col-md-4  text-left pl-5">
+                                <h4 class="text-light mb-3">Quick Links</h4>
+                                <p><a href="nidhi-company-software.php">Nidhi Company Software</a></p>
+                                <p><a href="best-nidhi-software.php">Best Nidhi Software</a></p>
+                                <p><a href="nidhi-software-feature.php">Nidhi Software Feature</a></p>
+                                <p><a href="nidhicompanyreg.php">Nidhi Company Registration</a></p>
+                                <p><a href="nidhi-bank-reg.php">Nidhi Bank Registration</a></p>
+                                <p><a href="nidhi-bank-software.php">Nidhi Bank Software</a></p>
+                               <p><a href="nidhi-company-compliances.php">Nidhi Company  Compliance</a></p> 
+                            </div>
+                            <div class="col-md-4 col-sm-12 text-left">
+                                <h4 class="text-light mb-3">Follow Us</h4>
+                                <div class="column text-light">
+                                    <a target="_blank" href="https://www.facebook.com/Nidhi-Softwarez-340890656624580/?modal=admin_todo_tour"><i class="fab fa-facebook-f"></i></a>
+                                    <a target="_blank" href="https://www.instagram.com/nidhisoftwarezsolution/?hl=en"><i class="fab fa-instagram"></i></a>
+                                    <a target="_blank" href="https://twitter.com/nidhisoftwarez"><i class="fab fa-twitter"></i></a>
+                                    <a target="_blank" href="https://www.youtube.com/channel/UCY_JINvN-khN9F88lPwocjA"><i class="fab fa-youtube "></i></a>
+                                </div>
+                                <h4 class="text-light my-3">Nidhi API Partners</h4>
+                                <div class="api p-2">
+                                    <img src="assets/Axis_logo.png" class=" img-fluid w-50 " alt="axis">
+                                </div>
+                                <div class="api p-2">
+                                        <img src="assets/icici_logo.png" class=" img-fluid w-50" alt="icici">
+                                </div>
+                                <div class="api py-0">
+                                        <img src="assets/yes_logo.png" class=" img-fluid w-50 "alt="yes">
+                                </div>
+                                <div class="api p-2">
+                                        <img src="assets/rbl_logo.png" class=" img-fluid w-50 "alt="rbl">
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-3">
+                        <h4 class="text-left text-light mb-3">Feel Free To Write Us</h4>
+                    <div class="footer-contact">
+                        <form action="formhandler.php" method="POST" name="modal_form">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Name" required="required" data-error="Name is required.">
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input id="form_lastname" type="number" name="whatsapp" class="form-control" placeholder="Whatsapp No*" required="required" data-error="Lastname is required.">
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Email *" required="required" data-error="Valid email is required.">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                                <option value="Call Back">Get A Call Back</option>
+                                                <option value="Quotation">Request For Quotation</option>
+                                                <option value="Live Demo">Request A Free Live Demo</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me..." rows="2" required="required" data-error="Please, leave us a message."></textarea>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control bg-dark text-white text-center"  id="disabledInput" type="number" value=" 0 + 3 =" disabled> 
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input  type="number" name="uanswer" class="form-control" placeholder="?" required="required" data-error="Answer is required.">
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                            <input type="submit" name="submit_footer" id="submit_footer" class="btn w-100  px-2 py-2 float-right" value="Submit">
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-12 py-0  mt-2">
+                    <hr size="2" color="#555">
+                    <div class="row mb-0">
+                    <div class="col-md-8 text-lg-left text-sm-center">
+                        <p class="py-0 my-0"> &copy; 2019 <span class="h6" style="font-family:var(--Patua)";><a href="index.php"> Nidhisoftwarez Software Solution</a></span> | All Rights Reserved
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-lg-right text-sm-center mt-2">
+                                                <p class="h6" style="font-family:var(--Patua)";><a href="index.php">Total Visitors &colon; <span style="letter-spacing:5px;color:orangered;">0064067</span></a>
+                        </p>
+                    
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </footer>
+    <script src="js/jquery.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+        function add_chatinline() {
+
+            var hccid = 56664573;
+
+            var nt = document.createElement("script");
+
+            nt.async = true;
+            nt.src = "https://www.mylivechat.com/chatinline.aspx?hccid=" + hccid;
+
+            var ct = document.getElementsByTagName("script")[0];
+
+            ct.parentNode.insertBefore(nt, ct);
+
+        }
+
+        add_chatinline();
+    </script>
+
+</body>
+
+</html>

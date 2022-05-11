@@ -1,0 +1,129 @@
+@media only screen and (max-width: 768px) {
+  header .col-md-5 {
+    padding-bottom: 2vmin;
+    min-height: 355px!important;
+    margin-bottom:5px;
+  }
+  .subscribe .col-md-6 {
+    text-align: center !important;
+  }
+
+  .subscribe h4 {
+    font-size: 22px;
+  }
+
+  .section-1 .row .col-md-6 .panel {
+    position: initial;
+    width: initial;
+    height: initial;
+  }
+
+  .section-2 .cover,
+  .features .cover-feature {
+    background-position: -25vmin -10vmin;
+  }
+
+  .features .numbers .rect>i {
+    font-size: 40px;
+  }
+
+  .cover,
+  .cover-feature {
+    height: 80vmin;
+  }
+
+  .numbers .rect {
+    width: 10rem;
+    height: 8rem;
+  }
+
+  .numbers .rect h1,
+  .numbers .rect span {
+    font-size: 2rem;
+  }
+
+  .modular-features .card {
+    width: 22rem;
+    margin: 3vmin auto;
+  }
+
+  .section-3 {
+    height: inherit;
+    padding: 10vmin !important;
+  }
+
+  .section-3 .row h1 {
+    padding: 6vmin 4vmin;
+  }
+
+  .section-3 .platform .col-md-6 {
+    text-align: center !important;
+  }
+
+  .section-3 .desktop i {
+    font-size: 8vmin;
+  }
+
+  .section-4 .carousel-item {
+    padding-left: 0.6rem;
+  }
+
+  footer .row .col-md-2 {
+    margin-top: 0vmin;
+  }
+  .register img{
+    width:50%!important;
+  }
+}
+
+/* screen size 375px */
+
+@media only screen and (max-width: 425px) {
+  .section-4 .card {
+    width: 18em;
+  }
+  .register .col-md-6{
+    padding:0 0 !important;
+  }
+  .register a{
+    width:50%!important;
+  }
+  .register img{
+    width:40%!important;
+  }
+ 
+  header .slide .caption p {
+    margin-bottom:0px;
+  }
+  header .container .col-md-7 h1 {
+    font-size:6vmin;
+  }
+  
+  header .topnav ul {
+    justify-content:center;
+  }
+  footer .row .col-md-4{
+    padding-left:5vmin!important;
+  }
+  footer .api>img{
+    width:35%!important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .section-4 .carousel-inner {
+    margin-left: -4vmin;
+  }
+  .register .col-md-6{
+    padding:0 0 !important;
+  }
+  .register img{
+    width:40%!important;
+  }
+  .register a{
+    width:75%!important;
+  }
+  header .topnav ul {
+    justify-content:center;
+  }
+}
