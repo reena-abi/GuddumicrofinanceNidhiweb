@@ -7,10 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-
-namespace Guddumicrofinance
-{
-    public partial class _Default
-    {
+namespace Guddumicrofinance {
+    
+    
+    public partial class Default {
     }
 }
